@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url('./assests/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: relative;
+    height: 20%;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+nav img {
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav i{
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content{
+    height: 70%;
+    width: 50%;
+    position: relative;
+    left: 5%;
+    margin-top: 25px;
+}
+
+#content > h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#content h1{
+    font-size: 100px;
+    margin-bottom: 15px;
+}
+
+#content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.pikachu{
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-20%, -50%);
+}
