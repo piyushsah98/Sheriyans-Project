@@ -1,0 +1,201 @@
+@font-face {
+    font-family: chin;
+    src: url(./fonts/Zomboid.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #2D2E38;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page1 {
+    height: 75%;
+    background: url(./assests/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 100% 120px;
+    border-bottom-right-radius: 100% 120px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    padding-block: 1rem;
+    padding-inline: 16rem;
+    align-items: center;
+    /* background: royalblue; */
+    justify-content: space-between;
+}
+
+nav img {
+    height: 100%;
+    width: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    padding-top: 25px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    background: linear-gradient(rgba(255, 255, 0, 0.638), rgba(255, 255, 0, 0.337), rgba(255, 255, 0, 0.052));
+}
+
+/* nav a.active{
+    background: linear-gradient(rgba(255, 255, 0, 0.638), rgba(255, 255, 0, 0.337), rgba(255, 255, 0, 0.052));
+} */
+
+nav i {
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.monkey {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.monkey img {
+    height: 65vh;
+    animation: float 1.75s ease-in-out infinite;
+}
+
+.back_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.back_text div {
+    position: relative;
+    bottom: 27%;
+    color: #fff;
+
+}
+
+.back_text h1 {
+    font-family: chin;
+    font-size: 100px;
+    line-height: 0.85;
+}
+
+.back_text div>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.back_text .right_text {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.back_text button {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #000;
+    background: url(./assests/btn-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    z-index: 200;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.back_text button:hover {
+    transform: translate(-60%, -50%) scale(1.05);
+}
+
+.back_text button:active {
+    transform: translate(-60%, -50%) scale(0.95);
+}
+
+#page2 {
+    padding: 1rem 0;
+    height: 25%;
+    color: #fff;
+}
+
+#page2>h1 {
+    font-family: chin;
+    text-align: center;
+}
+
+#page2 div:nth-child(2) {
+    text-align: center;
+}
+
+#page2 img {
+    height: 30px;
+    width: auto;
+}
+
+#page2 div:nth-child(3) {
+    display: flex;
+    gap: 2rem;
+    padding: 0 13rem;
+    font-size: 13px;
+    color: rgb(184, 181, 181);
+}
+
+#page2 div:nth-child(3) p {
+    line-height: 1.6;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width:1024px) {
+    nav{
+        padding-inline: 2rem;
+    }
+}
